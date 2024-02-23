@@ -1,14 +1,16 @@
-import { View, Text } from 'react-native'
+import { Stack, useLocalSearchParams } from 'expo-router'
 import React from 'react'
-import { useLocalSearchParams } from 'expo-router'
+import { Text, View } from 'react-native'
 
 const UserPage = () => {
-    const {id} = useLocalSearchParams()
+	const { id } = useLocalSearchParams<{ id: string }>()
 
 	return (
-		<View>
-			<Text>{id}</Text>
-		</View>
+		<Stack.Screen options={{ title: id }}>
+			<View>
+				<Text>{id}</Text>
+			</View>
+		</Stack.Screen>
 	)
 }
 
