@@ -1,12 +1,21 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { SafeAreaView, Text, StyleSheet } from 'react-native'
 
 const FirstPage = () => {
 	return (
-		<View>
+		<SafeAreaView style={styles.container}>
 			<Text>FirstPage</Text>
-		</View>
+		</SafeAreaView>
 	)
 }
 
 export default FirstPage
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 20,
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
+})
