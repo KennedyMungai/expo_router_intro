@@ -55,16 +55,9 @@ function RootLayoutNav() {
 		<ThemeProvider
 			value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}
 		>
-			<Stack>
-				<Stack.Screen name='(tabs)/index' options={{ headerShown: false }} />
-				<Stack.Screen
-					name='users/[id]'
-					options={{
-						animation: 'slide_from_right',
-						animationDuration: 300
-					}}
-				/>
-			</Stack>
+      <Stack>
+        <Stack.Screen name='(tabs)' />
+      </Stack>
 		</ThemeProvider>
 	)
 }
