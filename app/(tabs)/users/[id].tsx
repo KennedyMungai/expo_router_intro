@@ -7,8 +7,15 @@ const UserPage = () => {
 
 	return (
 		<Stack.Screen options={{ title: id }}>
-			<View>
-				<Text>{id}</Text>
+			<View
+				style={{
+					flex: 1,
+					justifyContent: 'center',
+					alignItems: 'center',
+					padding: 20
+				}}
+			>
+				<Text>User Chicken Wings</Text>
 			</View>
 		</Stack.Screen>
 	)
